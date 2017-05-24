@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
-import java.util.List;
 
 /**
  * Created by Konrad on 2017-05-24.
@@ -22,8 +21,9 @@ public class Reservation {
     @JoinColumn(name = "idCustomer")
     private Customer customer;
 
-    @OneToMany(mappedBy = "reservation")
-    private List<Room> room;
+    @ManyToOne
+    @JoinColumn(name = "idRoom")
+    private Room room;
 
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @Temporal(TemporalType.TIMESTAMP)
@@ -33,4 +33,52 @@ public class Reservation {
     private double totalPrice;
 
     private String description;
+
+    public Long getIdReservation() {
+        return idReservation;
+    }
+
+    public void setIdReservation(Long idReservation) {
+        this.idReservation = idReservation;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
+    }
+
+    public Room getRoom() {
+        return room;
+    }
+
+    public void setRoom(Room room) {
+        this.room = room;
+    }
+
+    public double getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(double totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Date getDateReservation() {
+        return dateReservation;
+    }
+
+    public void setDateReservation(Date dateReservation) {
+        this.dateReservation = dateReservation;
+    }
 }

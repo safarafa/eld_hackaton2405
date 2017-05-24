@@ -2,6 +2,7 @@ package com.eleader.domain;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 /**
  * Created by Konrad on 2017-05-24.
@@ -10,15 +11,55 @@ import javax.validation.constraints.NotNull;
 @Table(name = "ROOMS")
 public class Room {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idRoom;
 
-    @ManyToOne
-    @JoinColumn(name = "idReservation")
-    private Reservation reservation;
+    @OneToMany(mappedBy = "room")
+    private List<Reservation> reservations;
 
     @NotNull
     private int seats;
+
+    private double price;
+
+    public Long getIdRoom() {
+        return idRoom;
+    }
+
+    public void setIdRoom(Long idRoom) {
+        this.idRoom = idRoom;
+    }
+
+//    public List<Reservation> getReservations() {
+//        return reservations;
+//    }
+//
+//    public void setReservations(List<Reservation> reservations) {
+//        this.reservations = reservations;
+//    }
+
+    public int getSeats() {
+        return seats;
+    }
+
+    public void setSeats(int seats) {
+        this.seats = seats;
+    }
+
+    public List<Reservation> getReservations() {
+        return reservations;
+    }
+
+    public void setReservations(List<Reservation> reservations) {
+        this.reservations = reservations;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
 }
