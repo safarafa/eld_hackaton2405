@@ -6,5 +6,7 @@
         xmlns:local="clr-namespace:HotelReservation"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid/>
+    <Grid>
+        <Grid x:Name="RoomDetailsGrid"/>
+    </Grid>
 </Window>
