@@ -17,20 +17,20 @@ namespace HotelReservation
         }
 
 
-        List<Rooms> PrepereList(int neededPlace, List<Rooms> allRooms)
+        public List<Rooms> PrepereList(int neededPlace, List<Rooms> allRooms)
         {
             List<Rooms> list = new List<Rooms>();
 
-            for (int i = neededPlace; i > 0; i--)
-            {
+            
                 foreach (Rooms room in allRooms)
                 {
-                    if (room.seats == i)
+                    if (room.seats == neededPlace)
                     {
+                        //if(!list.Contains(room))
                         list.Add(room);
                     }
                 }
-            }
+            
 
             return list;
         }
