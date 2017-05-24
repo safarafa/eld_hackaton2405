@@ -6,16 +6,23 @@
         xmlns:local="clr-namespace:HotelReservation"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid x:Name="RoomDetailsGrid" HorizontalAlignment="Left" Width="517">
-        <Grid x:Name="WelcomeGrid" Margin="0,0,10,10" Visibility="Hidden">
+    <Grid>
+        <Grid x:Name="WelcomeGrid" Margin="0,0,10,10">
             <Label x:Name="labelNumberOfPeople" Content="Podaj ilość osób:" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
             <TextBox x:Name="textBoxNumberOfPeople" HorizontalAlignment="Left" Height="26" Margin="120,10,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="78"/>
-            <Button x:Name="buttonShowRooms" Content="Pokaż pokoje" HorizontalAlignment="Left" Margin="65,55,0,0" VerticalAlignment="Top" Width="75"/>
+            <Button x:Name="buttonShowRooms" Content="Pokaż pokoje" HorizontalAlignment="Left" Margin="68,69,0,0" VerticalAlignment="Top" Width="75" Click="buttonShowRooms_Click"/>
+            <Label x:Name="labelWarning" Content="" HorizontalAlignment="Left" Margin="20,41,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.5,0.308"/>
         </Grid>
         <Grid x:Name="RoomsListGrid" Visibility="Hidden">
-            <ListBox x:Name="listBox" Margin="10,10,0,54" HorizontalAlignment="Left" Width="233"/>
-            <Button x:Name="buttonRoomBooking" Content="Zarezerwuj" HorizontalAlignment="Left" Margin="82,0,0,29" Width="75" Height="20" VerticalAlignment="Bottom"/>
+            <ListBox x:Name="listBoxRoomsList" Margin="10,10,10,54" SelectionMode="Multiple"/>
+            <Button x:Name="buttonRoomBooking" Content="Zarezerwuj" HorizontalAlignment="Left" Margin="121,0,0,29" Width="75" Height="20" VerticalAlignment="Bottom" Click="buttonRoomBooking_Click"/>
+            <Button x:Name="buttonBackToWelcome" Content="Cofnij" HorizontalAlignment="Left" Margin="32,0,0,29" VerticalAlignment="Bottom" Width="75" Click="buttonBackToWelcome_Click"/>
         </Grid>
-        <Button x:Name="buttonAcceptBooking" Content="Akceptuj" HorizontalAlignment="Left" Margin="216,270,0,0" VerticalAlignment="Top" Width="75"/>
+        <Grid x:Name="RoomDetailsGrid" Visibility="Hidden">
+            <Button x:Name="buttonAcceptBooking" Content="Akceptuj" Margin="97,102,0,0" HorizontalAlignment="Left" Width="75" Height="20" VerticalAlignment="Top"/>
+            <Label x:Name="label" Content="Liczba miejsc:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="label1" Content="Cena:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="buttonBackToRoomsList" Content="Cofnij" Margin="17,102,0,0" Click="buttonBackToRoomsList_Click" HorizontalAlignment="Left" Width="75" Height="20" VerticalAlignment="Top"/>
+        </Grid>
     </Grid>
 </Window>
