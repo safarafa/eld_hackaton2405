@@ -37,7 +37,7 @@ function displayRooms($conn,$ilosc){
         $output .= '<table>';
         $output .= '<tr><th>Numer</th><th>Miniatura</th><th>Ilość miejsc:</th></tr>';   
         foreach($result as $row){
-            $output .= '<tr><th>'.$row["id_room"].'</th><td>Miniatura</td><td>'.$row["seats"].'</td></tr>';
+            $output .= '<tr><th><a href="index.php?idSzczegoly='.$row["id_room"].'">'.$row["id_room"].'</a></th><td>Miniatura</td><td>'.$row["seats"].'</td></tr>';
             
         }
         $output .= '</table>';
@@ -59,7 +59,7 @@ function displayAll($conn){
         $output .= '<table>';
         $output .= '<tr><th>Numer</th><th>Miniatura</th><th>Ilość miejsc:</th></tr>';
         foreach($result as $row){
-            $output .= '<a href="index.php?idSzczegoly='.$row["id_room"].'"><tr><th>'.$row["id_room"].'</th><td>Miniatura</td><td style="text-align:center">'.$row["seats"].'</td></tr></a>';
+            $output .= '<tr><th><a href="index.php?idSzczegoly='.$row["id_room"].'">'.$row["id_room"].'</a></th><td>Miniatura</td><td style="text-align:center">'.$row["seats"].'</td></tr>';
         }
         $output .= '</table>';
     }
@@ -68,7 +68,7 @@ function displayAll($conn){
 
 function displayRoom($conn,$id){   
     
-    $query = "SELECT * FROM rooms";
+    $query = "SELECT * FROM rooms WHERE id_room=".$id."";
 //    $json = file_get_contents('json.txt', FILE_USE_INCLUDE_PATH);
 //
 //    $result = json_decode($json);
@@ -78,8 +78,8 @@ function displayRoom($conn,$id){
     
     if(isset($result) && $result!=""){
         foreach($result as $row){
-            if($id==$row["idRoom"]){
-            $output .= '<p>Id : '.$row["idRoom"].'</p><p>Id : '.$row["seats"].'</p><p>Id : '.$row["price"].'</p> ';
+            if($id==$row["id_room"]){
+            $output .= '<p>Id : '.$row["id_room"].'</p><p>Miejsca : '.$row["seats"].'</p><p>Cena : '.$row["price"].'</p> ';
             }
         }
     }
