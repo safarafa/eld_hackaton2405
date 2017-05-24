@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -64,7 +67,6 @@ namespace HotelReservation
             list.Add(room1);
             list.Add(room2);
             list.Add(room3);
-
 
         }
         private static bool IsTextAllowed(string text)

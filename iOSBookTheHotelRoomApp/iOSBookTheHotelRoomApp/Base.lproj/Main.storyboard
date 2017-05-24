@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -57,6 +58,10 @@
                                 <state key="normal" title="Wyświetl dostępne pokoje">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="checkRoomsBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5uz-5b-ewI"/>
+                                    <segue destination="cdK-eR-jlT" kind="show" identifier="hotelListVC" id="Ubk-ro-k6X"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -72,10 +77,100 @@
                             <constraint firstItem="gqI-Ux-z27" firstAttribute="top" secondItem="4Uc-DG-5WQ" secondAttribute="bottom" constant="50" id="kJd-fl-8BW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="howManyPplTextField" destination="4Uc-DG-5WQ" id="4Fl-C1-Ade"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
+        </scene>
+        <!--Hotel ListVC-->
+        <scene sceneID="8lr-H8-hhJ">
+            <objects>
+                <viewController id="cdK-eR-jlT" customClass="HotelListVC" customModule="iOSBookTheHotelRoomApp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H4G-As-u7G"/>
+                        <viewControllerLayoutGuide type="bottom" id="MSt-EN-PnM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yJg-XR-aLp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cdn-lQ-Koj">
+                                <rect key="frame" x="106" y="28" width="202" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Wg ceny"/>
+                                    <segment title="Wg lokalizacji"/>
+                                </segments>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="118" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9iq-w8-sIH">
+                                <rect key="frame" x="0.0" y="74" width="414" height="662"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="hotelCell" rowHeight="118" id="BgQ-eM-m68" customClass="hotelCell" customModule="iOSBookTheHotelRoomApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="118"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="BgQ-eM-m68" id="hhd-yp-0Wt">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="118"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D2a-nL-U0P">
+                                                    <rect key="frame" x="28" y="13" width="90" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="90" id="a9J-cJ-0Xf"/>
+                                                        <constraint firstAttribute="height" constant="90" id="oSb-l1-vpp"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hotel Hilton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0p-fa-LbQ">
+                                                    <rect key="frame" x="143" y="27" width="90" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="7hL-My-2jo"/>
+                                                        <constraint firstAttribute="width" constant="90" id="XGh-Ac-Pla"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="350 zł" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3V-dx-jWw">
+                                                    <rect key="frame" x="143" y="68" width="57" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="57" id="yoi-qd-6i0"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="f0p-fa-LbQ" firstAttribute="leading" secondItem="D2a-nL-U0P" secondAttribute="trailing" constant="25" id="0Bj-TJ-HyS"/>
+                                                <constraint firstItem="f3V-dx-jWw" firstAttribute="top" secondItem="f0p-fa-LbQ" secondAttribute="bottom" constant="20" id="DOE-0Y-2Bw"/>
+                                                <constraint firstItem="D2a-nL-U0P" firstAttribute="top" secondItem="hhd-yp-0Wt" secondAttribute="topMargin" constant="5" id="EW9-uF-xNA"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="D2a-nL-U0P" secondAttribute="bottom" constant="5" id="I88-8Q-skI"/>
+                                                <constraint firstItem="D2a-nL-U0P" firstAttribute="centerY" secondItem="hhd-yp-0Wt" secondAttribute="centerY" id="Irx-cl-CBr"/>
+                                                <constraint firstItem="f0p-fa-LbQ" firstAttribute="top" secondItem="hhd-yp-0Wt" secondAttribute="topMargin" constant="20" id="cFO-i2-U1g"/>
+                                                <constraint firstItem="f3V-dx-jWw" firstAttribute="leading" secondItem="f0p-fa-LbQ" secondAttribute="leading" id="u6i-dB-qoo"/>
+                                                <constraint firstItem="D2a-nL-U0P" firstAttribute="leading" secondItem="hhd-yp-0Wt" secondAttribute="leadingMargin" constant="20" id="z0D-i7-bq6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="hotelImage" destination="D2a-nL-U0P" id="vkm-tD-7Hz"/>
+                                            <outlet property="hotelName" destination="f0p-fa-LbQ" id="TYB-3g-ed0"/>
+                                            <outlet property="hotelPrice" destination="f3V-dx-jWw" id="9t0-Zs-m22"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVQ-K9-jZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873.91304347826099" y="121.46739130434784"/>
         </scene>
     </scenes>
 </document>
