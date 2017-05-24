@@ -1,17 +1,19 @@
-http://localhost:8080/customers/add
+GET: http://localhost:8080/rooms/all
 
-{
-	"idCustomer": 1,
-	"firstName": "Jan",
-	"lastName": "Kowalski",
-	"pesel": "12345678901",
-	"zipCode": "20-000",
-	"city": "Lublin",
-	"street": "Okopowa",
-	"apartNr": "10",
-	"phoneNumber": "600500400"
-}
-
-
-
-http://localhost:8080/customers/all
+[
+  {
+    "idRoom": 1,
+    "seats": 2,
+    "price": 150
+  },
+  {
+    "idRoom": 2,
+    "seats": 3,
+    "price": 300
+  },
+    {
+    "idRoom": 3,
+    "seats": 4,
+    "price": 450
+  }
+]
