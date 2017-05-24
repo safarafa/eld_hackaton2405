@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -32,7 +35,6 @@ namespace HotelReservation
             WelcomeGrid.Visibility = Visibility.Visible;
             RoomsListGrid.Visibility = Visibility.Hidden;
             RoomDetailsGrid.Visibility = Visibility.Hidden;
-
 
 
         }

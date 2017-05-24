@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Grid x:Name="WelcomeGrid" Margin="0,0,10,10">
+        <Grid x:Name="WelcomeGrid" Margin="0,0,10,10" Visibility="Hidden">
             <Label x:Name="labelNumberOfPeople" Content="Podaj ilość osób:" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
             <TextBox x:Name="textBoxNumberOfPeople" HorizontalAlignment="Left" Height="26" Margin="120,10,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="78"/>
             <Button x:Name="buttonShowRooms" Content="Pokaż pokoje" HorizontalAlignment="Left" Margin="68,69,0,0" VerticalAlignment="Top" Width="75" Click="buttonShowRooms_Click"/>
@@ -18,11 +18,13 @@
             <Button x:Name="buttonRoomBooking" Content="Zarezerwuj" HorizontalAlignment="Left" Margin="121,0,0,29" Width="75" Height="20" VerticalAlignment="Bottom" Click="buttonRoomBooking_Click"/>
             <Button x:Name="buttonBackToWelcome" Content="Cofnij" HorizontalAlignment="Left" Margin="32,0,0,29" VerticalAlignment="Bottom" Width="75" Click="buttonBackToWelcome_Click"/>
         </Grid>
-        <Grid x:Name="RoomDetailsGrid" Visibility="Hidden">
+        <Grid x:Name="RoomDetailsGrid">
             <Button x:Name="buttonAcceptBooking" Content="Akceptuj" Margin="97,102,0,0" HorizontalAlignment="Left" Width="75" Height="20" VerticalAlignment="Top"/>
             <Label x:Name="label" Content="Liczba miejsc:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
             <Label x:Name="label1" Content="Cena:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
             <Button x:Name="buttonBackToRoomsList" Content="Cofnij" Margin="17,102,0,0" Click="buttonBackToRoomsList_Click" HorizontalAlignment="Left" Width="75" Height="20" VerticalAlignment="Top"/>
+            <Label x:Name="labelSeats" Content="" HorizontalAlignment="Left" Margin="97,10,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="labelPrice" Content="" HorizontalAlignment="Left" Margin="54,41,0,0" VerticalAlignment="Top"/>
         </Grid>
     </Grid>
 </Window>

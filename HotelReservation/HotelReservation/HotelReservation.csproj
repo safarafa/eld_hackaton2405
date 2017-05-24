@@ -98,7 +98,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
-    <None Include="RoomsList.json" />
+    <Resource Include="RoomsList.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
