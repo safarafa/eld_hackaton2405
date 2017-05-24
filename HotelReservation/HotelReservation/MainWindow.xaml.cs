@@ -33,9 +33,7 @@ namespace HotelReservation
             RoomsListGrid.Visibility = Visibility.Hidden;
             RoomDetailsGrid.Visibility = Visibility.Hidden;
 
-            //test listbox element
-            listBoxRoomsList.Items.Add("Item1");
-            listBoxRoomsList.Items.Add("Item2");
+
 
         }
         private static bool IsTextAllowed(string text)
@@ -55,6 +53,8 @@ namespace HotelReservation
 
                 WelcomeGrid.Visibility = Visibility.Hidden;
                 RoomsListGrid.Visibility = Visibility.Visible;
+
+
             }else
             {
                 labelWarning.Content = "Wprowadź prawidłową wartość!";

@@ -1,0 +1,18 @@
+﻿[
+  {
+    "idRoom": 1,
+    "seats": 2,
+    "price": 150
+  },
+  {
+    "idRoom": 2,
+    "seats": 3,
+    "price": 300
+  },
+    {
+    "idRoom": 3,
+    "seats": 4,
+    "price": 450
+  }
+]
+
