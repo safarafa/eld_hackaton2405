@@ -1,0 +1,11 @@
+{
+	"idCustomer": 1,
+	"firstName": "Jan",
+	"lastName": "Kowalski",
+	"pesel": "12345678901",
+	"zipCode": "20-000",
+	"city": "Lublin",
+	"street": "Okopowa",
+	"apartNr": "10",
+	"phoneNumber": "600500400"
+}
