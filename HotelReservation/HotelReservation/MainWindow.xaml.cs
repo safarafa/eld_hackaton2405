@@ -25,8 +25,9 @@ namespace HotelReservation
     public partial class MainWindow : Window
     {
 
-        RoomList roomList = new RoomList();
-        Rooms room = new Rooms();
+            RoomList roomList = new RoomList();
+
+            Rooms room = new Rooms();
 
             Rooms room1 = new Rooms();
 
@@ -88,7 +89,7 @@ namespace HotelReservation
                 RoomsListGrid.Visibility = Visibility.Visible;
                 List<Rooms> tempList = roomList.PrepereList(Int32.Parse(textBoxNumberOfPeople.Text),list);
 
-                foreach(Rooms rom in tempList)
+                foreach(var room in list)
                 {
                     listBoxRoomsList.Items.Add(room.idRoom+"  "+room.seats+"  "+room.price);
                 }

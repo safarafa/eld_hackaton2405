@@ -24,11 +24,9 @@ namespace HotelReservation
             
                 foreach (Rooms room in allRooms)
                 {
-                    if (room.seats == neededPlace)
-                    {
-                        //if(!list.Contains(room))
+                    
                         list.Add(room);
-                    }
+                  
                 }
             
 
