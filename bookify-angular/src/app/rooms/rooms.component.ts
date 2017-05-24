@@ -31,8 +31,10 @@ export class RoomsComponent implements OnInit {
     this.location = this.route.snapshot.params['location'];
     this.rooms.push(
       new Room(this.drooms, this.people, this.price, this.location, 'Victoria'),
-      new Room(this.drooms, this.people, this.price, this.location, 'Victoria'),
-      new Room(this.drooms, this.people, this.price, this.location, 'Victoria')
+      new Room(this.drooms, this.people, this.price, this.location, 'Merkury'),
+      new Room(this.drooms, this.people, this.price, this.location, 'Las Palmas'),
+      new Room(this.drooms, this.people, this.price, this.location, 'Astoria'),
+      new Room(this.drooms, this.people, this.price, this.location, 'Bristol'),
     );
   }
 
