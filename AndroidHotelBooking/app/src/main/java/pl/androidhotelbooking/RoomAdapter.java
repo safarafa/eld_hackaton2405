@@ -46,7 +46,7 @@ public class RoomAdapter extends ArrayAdapter<Room>
             holder = new ViewHolder();
             v = vi.inflate(Resource, null);
             holder.imageview = (ImageView) v.findViewById(R.id.image);
-            holder.tvNazwa = (TextView) v.findViewById(R.id.tvNazwa);
+            holder.tvNazwa = (TextView) v.findViewById(R.id.tvId);
             holder.tvCena = (TextView) v.findViewById(R.id.tvCena);
 
 
@@ -58,8 +58,8 @@ public class RoomAdapter extends ArrayAdapter<Room>
         }
 
         // new DownloadImageTask(holder.imageview).execute(actorList.get(position).getImage());
-        holder.tvNazwa.setText(roomList.get(position).getNazwa());
-        holder.tvCena.setText(roomList.get(position).getNazwa());
+        holder.tvNazwa.setText(roomList.get(position).getId());
+        holder.tvCena.setText(roomList.get(position).getCena());
 
 
         return v;

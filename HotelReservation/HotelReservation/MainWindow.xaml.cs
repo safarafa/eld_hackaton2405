@@ -24,10 +24,9 @@ namespace HotelReservation
     /// </summary>
     public partial class MainWindow : Window
     {
-
-            RoomList roomList = new RoomList();
-
-            Rooms room = new Rooms();
+        int price;
+        RoomList roomList = new RoomList();
+        Rooms room = new Rooms();
 
             Rooms room1 = new Rooms();
 
@@ -91,8 +90,9 @@ namespace HotelReservation
 
                 foreach(var room in list)
                 {
-                    listBoxRoomsList.Items.Add(room.idRoom+"  "+room.seats+"  "+room.price);
+                    listBoxRoomsList.Items.Add(rom.idRoom+"  "+rom.seats+"  "+rom.price);
                 }
+
 
             }else
             {
@@ -118,6 +118,11 @@ namespace HotelReservation
 
                 RoomsListGrid.Visibility = Visibility.Hidden;
                 RoomDetailsGrid.Visibility = Visibility.Visible;
+
+               // foreach(var item in listBoxRoomsList.SelectedItems)
+               // {
+               // price = Int32.Parse(item.ToString());
+               // }
             }
                       
         }

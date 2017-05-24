@@ -6,4 +6,6 @@
     <string name="search">Szukaj</string>
     <string name="people_number">Liczba osób:</string>
     <string name="price">Cena:</string>
+    <string name="loading">Filtrowanie pokojów</string>
+    <string name="please_wait">Proszę czekać&#8230;</string>
 </resources>

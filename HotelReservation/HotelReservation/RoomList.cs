@@ -21,14 +21,18 @@ namespace HotelReservation
         {
             List<Rooms> list = new List<Rooms>();
 
-            
+            for (int i = neededPlace + 1; i > 0; i--)
+            {
                 foreach (Rooms room in allRooms)
                 {
-                    
-                        list.Add(room);
-                  
+                    if (room.seats == i)
+                    {
+                        if (!list.Contains(room))
+                            list.Add(room);
+                    }
                 }
-            
+            }
+
 
             return list;
         }
