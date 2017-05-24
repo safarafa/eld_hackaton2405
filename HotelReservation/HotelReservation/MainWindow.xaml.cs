@@ -92,5 +92,10 @@ namespace HotelReservation
             RoomsListGrid.Visibility = Visibility.Visible;
 
         }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

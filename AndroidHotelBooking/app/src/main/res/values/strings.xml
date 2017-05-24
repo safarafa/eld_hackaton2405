@@ -4,4 +4,6 @@
     <string name="number_of_people">Podaj liczbę osób:</string>
     <string name="warning">Liczba osób musi być większa od 1!</string>
     <string name="search">Szukaj</string>
+    <string name="people_number">Liczba osób:</string>
+    <string name="price">Cena:</string>
 </resources>
