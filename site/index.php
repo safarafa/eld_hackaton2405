@@ -27,14 +27,20 @@ if(isset($_GET["rezerwacja"]) && $_GET["rezerwacja"]==1){
     include "rezerwuj.php";
     
 }else
-if(isset($_GET["wyswietlwszystko"]) && $_GET["wyswietlwszystko"]==1){     
+if(isset($_GET["idSzczegoly"])){     
  
+   displayRoom($conn,$_GET["idSzczegoly"]);
+    
+}else
+if(isset($_GET["wyswietlwszystko"]) && $_GET["wyswietlwszystko"]==1){     
+
+    displayAll($conn);
    //include 'wyswietl.php';
     
 }else
-if(isset($_GET["ilosc"])){     
+if(isset($_POST["ilosc"])){     
     
-    displayRooms($conn,$_GET["ilosc"],$_GET["iloscP"]);
+    displayRooms($conn,$_POST["ilosc"]);
     
 }else
 {

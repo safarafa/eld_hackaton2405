@@ -14,8 +14,8 @@ if(isset($_GET["usun"]) && $_GET["usun"]!=""){
 
 
 <form  method="post" action="index.php">
-    <p><label for="ilosc">Podaj liczbę osób</label> <input type="number" id="ilosc"></p>
-    <p><label for="iloscP">Podaj ilość pokoi</label> <input type="number" id="iloscP"></p>
+    <p><label for="ilosc">Podaj liczbę osób</label> <input type="number" name="ilosc"></p>
+<!--    <p><label for="iloscP">Podaj ilość pokoi</label> <input type="number" name="iloscP"></p>-->
     <input type="submit">
 </form>
 </article>

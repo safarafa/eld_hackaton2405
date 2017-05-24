@@ -1,11 +1,11 @@
 <?php 
-    //konfiguracja i połączenie z bazą danych
-//    $host = 'localhost';
-//    $uzytkownik = 'root';
-//    $haslo = "";
-//    $nazwa_bazy = "";
-//    $conn = new mysqli($host, $uzytkownik, $haslo, $nazwa_bazy); 
-//    $conn->set_charset('utf8');
+   //    konfiguracja i połączenie z bazą danych
+    $host = 'localhost';
+    $uzytkownik = 'root';
+    $haslo = "";
+    $nazwa_bazy = "hotels";
+    $conn = new mysqli($host, $uzytkownik, $haslo, $nazwa_bazy); 
+    $conn->set_charset('utf8');
 
 //    $json = '
 //    {
@@ -22,9 +22,9 @@
 //
 //    echo $yummy->toppings[2]->id;
 
-$json = file_get_contents('json.txt', FILE_USE_INCLUDE_PATH);
-
-$yummy = json_decode($json);
+//$json = file_get_contents('json.txt', FILE_USE_INCLUDE_PATH);
+//
+//$yummy = json_decode($json);
 
 //echo $yummy->idCustomer;
 

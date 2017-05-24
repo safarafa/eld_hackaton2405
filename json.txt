@@ -1,11 +1,135 @@
-{
-	"idCustomer": 1,
-	"firstName": "Jan",
-	"lastName": "Kowalski",
-	"pesel": "12345678901",
-	"zipCode": "20-000",
-	"city": "Lublin",
-	"street": "Okopowa",
-	"apartNr": "10",
-	"phoneNumber": "600500400"
-}
+GET: http://localhost:8080/customers/all
+
+[
+  {
+    "idCustomer": 1,
+    "firstName": "Jan",
+    "lastName": "Kowalski"
+  },
+  {
+    "idCustomer": 2,
+    "firstName": "Jan",
+    "lastName": "Nowak"
+  },
+  {
+    "idCustomer": 3,
+    "firstName": "Piotr",
+    "lastName": "Nowak"
+  }
+]
+
+POST: http://localhost:8080/customers/add
+  {
+    "idCustomer": 4,
+    "firstName": "Krzysztof",
+    "lastName": "Kowalski"
+  }
+  
+
+  
+  //POKOJE *************************************
+  
+  
+  GET: http://localhost:8080/rooms/all
+  
+[
+  {
+    "idRoom": 1,
+    "seats": 1,
+    "price": 100
+  },
+  {
+    "idRoom": 2,
+    "seats": 2,
+    "price": 200
+  },
+  {
+    "idRoom": 3,
+    "seats": 3,
+    "price": 300
+  }
+]
+
+
+POST: http://localhost:8080/rooms/add
+
+  {
+    "idRoom": 4,
+    "seats": 4,
+    "price": 400
+  }
+  
+  
+  
+  
+  //REZERWACJE
+  
+GET: http://localhost:8080/reservations/all
+  
+[
+  {
+    "idReservation": 1,
+    "customer": {
+      "idCustomer": 1,
+      "firstName": "Jan",
+      "lastName": "Kowalski"
+    },
+    "room": {
+      "idRoom": 1,
+      "seats": 1,
+      "price": 100
+    },
+    "totalPrice": 100,
+    "description": "Opis1"
+  },
+  {
+    "idReservation": 2,
+    "customer": {
+      "idCustomer": 2,
+      "firstName": "Jan",
+      "lastName": "Nowak"
+    },
+    "room": {
+      "idRoom": 2,
+      "seats": 2,
+      "price": 200
+    },
+    "totalPrice": 200,
+    "description": "Opis2"
+  },
+  {
+    "idReservation": 3,
+    "customer": {
+      "idCustomer": 3,
+      "firstName": "Piotr",
+      "lastName": "Nowak"
+    },
+    "room": {
+      "idRoom": 3,
+      "seats": 3,
+      "price": 300
+    },
+    "totalPrice": 300,
+    "description": "Opis3"
+  }
+]
+
+
+
+POST: http://localhost:8080/reservations/add
+
+  {
+    "idReservation": 4,
+    "customer": {
+      "idCustomer": 1,
+      "firstName": "Jan",
+      "lastName": "Kowalski"
+    },
+    "room": {
+      "idRoom": 1,
+      "seats": 1,
+      "price": 100
+    },
+    "totalPrice": 100,
+    "description": "Opis1"
+  }
