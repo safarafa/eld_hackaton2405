@@ -31,28 +31,12 @@ public class Room {
         this.idRoom = idRoom;
     }
 
-//    public List<Reservation> getReservations() {
-//        return reservations;
-//    }
-//
-//    public void setReservations(List<Reservation> reservations) {
-//        this.reservations = reservations;
-//    }
-
     public int getSeats() {
         return seats;
     }
 
     public void setSeats(int seats) {
         this.seats = seats;
-    }
-
-    public List<Reservation> getReservations() {
-        return reservations;
-    }
-
-    public void setReservations(List<Reservation> reservations) {
-        this.reservations = reservations;
     }
 
     public double getPrice() {

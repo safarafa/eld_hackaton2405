@@ -1,10 +1,6 @@
 package com.eleader.domain;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
-import java.util.Date;
 
 /**
  * Created by Konrad on 2017-05-24.
@@ -25,22 +21,9 @@ public class Reservation {
     @JoinColumn(name = "idRoom")
     private Room room;
 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    @Temporal(TemporalType.TIMESTAMP)
-    @NotNull
-    private Date dateReservation;
-
     private double totalPrice;
 
     private String description;
-
-    public Long getIdReservation() {
-        return idReservation;
-    }
-
-    public void setIdReservation(Long idReservation) {
-        this.idReservation = idReservation;
-    }
 
     public Customer getCustomer() {
         return customer;
@@ -58,6 +41,14 @@ public class Reservation {
         this.room = room;
     }
 
+    public Long getIdReservation() {
+        return idReservation;
+    }
+
+    public void setIdReservation(Long idReservation) {
+        this.idReservation = idReservation;
+    }
+
     public double getTotalPrice() {
         return totalPrice;
     }
@@ -72,13 +63,5 @@ public class Reservation {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public Date getDateReservation() {
-        return dateReservation;
-    }
-
-    public void setDateReservation(Date dateReservation) {
-        this.dateReservation = dateReservation;
     }
 }
