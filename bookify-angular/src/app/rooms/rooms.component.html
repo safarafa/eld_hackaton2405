@@ -1,12 +1,12 @@
 <div class="container">
   <ul class="list-group">
-    <a href="#" *ngFor="let room of rooms" class="list-group-item">
+    <li *ngFor="let room of rooms" class="list-group-item" (click)="redirectToSummarize(room)">
       <p>Liczba pokoi: <strong>{{ room.numberOfRooms }}</strong></p>
       <p>Ilość osób: <strong>{{ room.numberOfPeople }}</strong></p>
       <p>Cena za noc: <strong>{{ room.price }} $</strong></p>
       <p>Lokalizacja: <strong>{{ room.location }}</strong></p>
       <p>Hotel: <strong>{{ room.hotel }}</strong></p>
-    </a>
+    </li>
   </ul>
   <a class="btn btn-primary" routerLink="/reservation" routerLinkActive="active" href="#" role="button">Wróć</a>
 </div>

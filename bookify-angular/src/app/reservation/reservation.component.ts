@@ -30,6 +30,12 @@ export class ReservationComponent implements OnInit {
     this.price = (this.numberOfPeople * this.numberOfRooms) * 30;
   }
 
+  redirectToRooms() {
+    this.router.navigate(['./rooms', this.numberOfRooms,this.numberOfPeople,
+      this.price, this.city
+    ]);
+  }
+
   ngOnInit() {
     this.geolocationService.getInfoByGeolocation().subscribe(
       data => this.city = data.city
