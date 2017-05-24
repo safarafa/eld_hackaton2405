@@ -8,29 +8,9 @@ namespace HotelReservation
 {
     public class Rooms
     {
-        int idRoom;
-        int roomPlace;
+        public int idRoom { get; set; }
+        public int seats { get; set; }
+        public int price { get; set; }
 
-        void setPlace(int roomPlace)
-        {
-            this.roomPlace = roomPlace;
-        }
-
-        public int getPlace()
-        {
-            return roomPlace;
-        }
-
-        void setId(int idRoom)
-        {
-            this.idRoom = idRoom;
-        }
-
-        int getId()
-        {
-            return roomPlace;
-        }
-
-      
     }
 }

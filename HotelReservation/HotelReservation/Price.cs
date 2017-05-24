@@ -23,8 +23,8 @@ namespace HotelReservation
 
         double getPrice(Rooms room)
         {
-            if (Dic.ContainsKey(room.getPlace()))
-                price = Dic[room.getPlace()];
+            if (Dic.ContainsKey(room.seats))
+                price = Dic[room.seats];
 
             return price;
         }
