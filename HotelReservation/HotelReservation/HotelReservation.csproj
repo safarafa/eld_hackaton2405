@@ -66,6 +66,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Price.cs" />
     <Compile Include="Rooms.cs" />
     <Compile Include="RoomList.cs" />
     <Compile Include="MainWindow.xaml.cs">

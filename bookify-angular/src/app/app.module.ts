@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ReservationComponent } from './reservation/reservation.component';
 import { RoomsComponent } from './rooms/rooms.component';
+import { SummarizeComponent } from './summarize/summarize.component';
 
 const appRoutes: Routes = [
   {
@@ -14,7 +15,11 @@ const appRoutes: Routes = [
     component: ReservationComponent
   },
   {
-    path: 'rooms',
+    path: 'summarize/:rooms/:people/:price/:location/:hotel',
+    component: SummarizeComponent
+  },
+  {
+    path: 'rooms/:rooms/:people/:price/:location',
     component: RoomsComponent
   },
   { 
@@ -28,7 +33,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     ReservationComponent,
-    RoomsComponent
+    RoomsComponent,
+    SummarizeComponent
   ],
   imports: [
     BrowserModule,
