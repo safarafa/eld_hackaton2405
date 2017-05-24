@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidHotelBooking</string>
+    <string name="find_room">Znajdź pokój w okolicy!</string>
+    <string name="number_of_people">Podaj liczbę osób:</string>
+    <string name="warning">Liczba osób musi być większa od 1!</string>
+    <string name="search">Szukaj</string>
+</resources>
