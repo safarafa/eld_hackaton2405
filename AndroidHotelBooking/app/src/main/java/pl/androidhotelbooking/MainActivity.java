@@ -38,8 +38,6 @@ public class MainActivity extends Activity
 
         if(!editTextValue.equals(""))
             numberOfPeople = Integer.parseInt(editTextValue);
-        else
-            Toast.makeText(this, R.string.warning, Toast.LENGTH_SHORT).show();
 
         if(numberOfPeople !=0)
             goToListOfRooms(numberOfPeople);
