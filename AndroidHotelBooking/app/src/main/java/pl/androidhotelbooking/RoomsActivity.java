@@ -13,18 +13,11 @@ public class RoomsActivity extends Activity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-
-        ArrayList<Room> listaPokoje = new ArrayList<Room>();
-
-
-
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rooms);
 
+        ArrayList<Room> listaPokoje = new ArrayList<>();
         int numberOfPeople = getIntent().getExtras().getInt(MainActivity.NUMBER_OF_PEOPLE);
-
-
     }
 
     private void goToSelectedRoom(int position)
