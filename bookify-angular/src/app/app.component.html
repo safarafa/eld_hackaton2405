@@ -10,7 +10,7 @@
     <div class="form-group">
       <label for="inputNumberOfPeople" class="col-sm-2 control-label">Liczba osób</label>
       <div class="col-sm-10">
-        <select class="form-control">
+        <select class="form-control" (change)="onInputNumberOfPeopleChange($event.target.value)">
           <option>1</option>
           <option selected>2</option>
           <option>3</option>
@@ -22,7 +22,7 @@
     <div class="form-group">
       <label for="inputNumberOfRooms" class="col-sm-2 control-label">Ilość pokoi</label>
       <div class="col-sm-10">
-        <select class="form-control">
+        <select class="form-control" (change)="onInputNumberOfRoomsChange($event.target.value)">
           <option>1</option>
           <option>2</option>
           <option>3</option>
@@ -45,4 +45,5 @@
       </div>
     </div>
   </form>
+  <p>Koszt wynajęcia pokoju: <strong>{{ price }} $</strong></p>
 </div>
