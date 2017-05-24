@@ -33,4 +33,19 @@ public class RoomReservation {
 
         return roomService.saveRoom(room);
     }
+
+    @RequestMapping(value = "/{idRoom}", method = RequestMethod.GET)
+    @ResponseStatus(HttpStatus.OK)
+    @ResponseBody
+    public Room getRoom(@PathVariable Long idRoom){
+
+        return roomService.getRoomById(idRoom);
+    }
+
+    @RequestMapping(value = "/delete/{idRoom}", method = RequestMethod.DELETE)
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteRoom(@PathVariable Long idRoom){
+
+        roomService.deleteRoom(idRoom);
+    }
 }
