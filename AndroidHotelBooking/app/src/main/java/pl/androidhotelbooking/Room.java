@@ -2,18 +2,18 @@ package pl.androidhotelbooking;
 
 public class Room
 {
-    public String nazwa;
+    public String id;
     public String cena;
 
 
-    public String getNazwa()
+    public String getId()
     {
-        return nazwa;
+        return id;
     }
 
-    public void setNazwa(String nazwa)
+    public void setId(String id)
     {
-        this.nazwa = nazwa;
+        this.id = id;
     }
 
     public String getCena()

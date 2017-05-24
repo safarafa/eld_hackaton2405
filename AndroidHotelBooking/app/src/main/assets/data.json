@@ -1,0 +1,33 @@
+{
+  "rooms": [
+    {
+      "idRoom": 1,
+      "seats": 1,
+      "price": 100
+    },
+    {
+      "idRoom": 4,
+      "seats": 3,
+      "price": 5600
+    },{
+      "idRoom": 5,
+      "seats": 3,
+      "price": 11100
+    },
+    {
+      "idRoom": 2,
+      "seats": 2,
+      "price": 200
+    },
+    {
+      "idRoom": 3,
+      "seats": 3,
+      "price": 300
+    },
+    {
+      "idRoom": 4,
+      "seats": 4,
+      "price": 400
+    }
+  ]
+}
