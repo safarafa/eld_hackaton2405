@@ -8,22 +8,67 @@
 
 /* Begin PBXBuildFile section */
 		40BDAB5D1ED58E17001723F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BDAB5C1ED58E17001723F0 /* AppDelegate.swift */; };
-		40BDAB5F1ED58E17001723F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BDAB5E1ED58E17001723F0 /* ViewController.swift */; };
 		40BDAB621ED58E17001723F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40BDAB601ED58E17001723F0 /* Main.storyboard */; };
 		40BDAB651ED58E17001723F0 /* iOSBookTheHotelRoomApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40BDAB631ED58E17001723F0 /* iOSBookTheHotelRoomApp.xcdatamodeld */; };
 		40BDAB671ED58E17001723F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40BDAB661ED58E17001723F0 /* Assets.xcassets */; };
 		40BDAB6A1ED58E17001723F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40BDAB681ED58E17001723F0 /* LaunchScreen.storyboard */; };
+		40BDAB721ED5A132001723F0 /* hotelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BDAB711ED5A132001723F0 /* hotelCell.swift */; };
+		40BDAB741ED5A251001723F0 /* HotelListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BDAB731ED5A251001723F0 /* HotelListVC.swift */; };
+		40DE45121ED5A766007ECC83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE45111ED5A766007ECC83 /* ViewController.swift */; };
+		40DE45141ED5AFF7007ECC83 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE45131ED5AFF7007ECC83 /* Hotel.swift */; };
+		40DE452A1ED5B9FB007ECC83 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE45161ED5B9FB007ECC83 /* AFError.swift */; };
+		40DE452B1ED5B9FB007ECC83 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE45181ED5B9FB007ECC83 /* Alamofire.swift */; };
+		40DE452C1ED5B9FB007ECC83 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE45191ED5B9FB007ECC83 /* DispatchQueue+Alamofire.swift */; };
+		40DE452D1ED5B9FB007ECC83 /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40DE451A1ED5B9FB007ECC83 /* Info-tvOS.plist */; };
+		40DE452E1ED5B9FB007ECC83 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40DE451B1ED5B9FB007ECC83 /* Info.plist */; };
+		40DE452F1ED5B9FB007ECC83 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE451C1ED5B9FB007ECC83 /* MultipartFormData.swift */; };
+		40DE45301ED5B9FB007ECC83 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE451D1ED5B9FB007ECC83 /* NetworkReachabilityManager.swift */; };
+		40DE45311ED5B9FB007ECC83 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE451E1ED5B9FB007ECC83 /* Notifications.swift */; };
+		40DE45321ED5B9FB007ECC83 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE451F1ED5B9FB007ECC83 /* ParameterEncoding.swift */; };
+		40DE45331ED5B9FB007ECC83 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE45201ED5B9FB007ECC83 /* Request.swift */; };
+		40DE45341ED5B9FB007ECC83 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE45211ED5B9FB007ECC83 /* Response.swift */; };
+		40DE45351ED5B9FB007ECC83 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE45221ED5B9FB007ECC83 /* ResponseSerialization.swift */; };
+		40DE45361ED5B9FB007ECC83 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE45231ED5B9FB007ECC83 /* Result.swift */; };
+		40DE45371ED5B9FB007ECC83 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE45241ED5B9FB007ECC83 /* ServerTrustPolicy.swift */; };
+		40DE45381ED5B9FB007ECC83 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE45251ED5B9FB007ECC83 /* SessionDelegate.swift */; };
+		40DE45391ED5B9FB007ECC83 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE45261ED5B9FB007ECC83 /* SessionManager.swift */; };
+		40DE453A1ED5B9FB007ECC83 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE45271ED5B9FB007ECC83 /* TaskDelegate.swift */; };
+		40DE453B1ED5B9FB007ECC83 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE45281ED5B9FB007ECC83 /* Timeline.swift */; };
+		40DE453C1ED5B9FB007ECC83 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DE45291ED5B9FB007ECC83 /* Validation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40BDAB591ED58E17001723F0 /* iOSBookTheHotelRoomApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBookTheHotelRoomApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40BDAB5C1ED58E17001723F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40BDAB5E1ED58E17001723F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		40BDAB611ED58E17001723F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40BDAB641ED58E17001723F0 /* iOSBookTheHotelRoomApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSBookTheHotelRoomApp.xcdatamodel; sourceTree = "<group>"; };
 		40BDAB661ED58E17001723F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40BDAB691ED58E17001723F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40BDAB6B1ED58E17001723F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40BDAB711ED5A132001723F0 /* hotelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = hotelCell.swift; sourceTree = "<group>"; };
+		40BDAB731ED5A251001723F0 /* HotelListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotelListVC.swift; sourceTree = "<group>"; };
+		40DE45111ED5A766007ECC83 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40DE45131ED5AFF7007ECC83 /* Hotel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		40DE45161ED5B9FB007ECC83 /* AFError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
+		40DE45171ED5B9FB007ECC83 /* Alamofire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
+		40DE45181ED5B9FB007ECC83 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		40DE45191ED5B9FB007ECC83 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		40DE451A1ED5B9FB007ECC83 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		40DE451B1ED5B9FB007ECC83 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40DE451C1ED5B9FB007ECC83 /* MultipartFormData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
+		40DE451D1ED5B9FB007ECC83 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		40DE451E1ED5B9FB007ECC83 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		40DE451F1ED5B9FB007ECC83 /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		40DE45201ED5B9FB007ECC83 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		40DE45211ED5B9FB007ECC83 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		40DE45221ED5B9FB007ECC83 /* ResponseSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		40DE45231ED5B9FB007ECC83 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		40DE45241ED5B9FB007ECC83 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		40DE45251ED5B9FB007ECC83 /* SessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		40DE45261ED5B9FB007ECC83 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		40DE45271ED5B9FB007ECC83 /* TaskDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
+		40DE45281ED5B9FB007ECC83 /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		40DE45291ED5B9FB007ECC83 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +101,46 @@
 		40BDAB5B1ED58E17001723F0 /* iOSBookTheHotelRoomApp */ = {
 			isa = PBXGroup;
 			children = (
+				40DE45151ED5B9FB007ECC83 /* Source */,
 				40BDAB5C1ED58E17001723F0 /* AppDelegate.swift */,
-				40BDAB5E1ED58E17001723F0 /* ViewController.swift */,
 				40BDAB601ED58E17001723F0 /* Main.storyboard */,
 				40BDAB661ED58E17001723F0 /* Assets.xcassets */,
 				40BDAB681ED58E17001723F0 /* LaunchScreen.storyboard */,
 				40BDAB6B1ED58E17001723F0 /* Info.plist */,
 				40BDAB631ED58E17001723F0 /* iOSBookTheHotelRoomApp.xcdatamodeld */,
+				40BDAB711ED5A132001723F0 /* hotelCell.swift */,
+				40BDAB731ED5A251001723F0 /* HotelListVC.swift */,
+				40DE45111ED5A766007ECC83 /* ViewController.swift */,
+				40DE45131ED5AFF7007ECC83 /* Hotel.swift */,
 			);
 			path = iOSBookTheHotelRoomApp;
+			sourceTree = "<group>";
+		};
+		40DE45151ED5B9FB007ECC83 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				40DE45161ED5B9FB007ECC83 /* AFError.swift */,
+				40DE45171ED5B9FB007ECC83 /* Alamofire.h */,
+				40DE45181ED5B9FB007ECC83 /* Alamofire.swift */,
+				40DE45191ED5B9FB007ECC83 /* DispatchQueue+Alamofire.swift */,
+				40DE451A1ED5B9FB007ECC83 /* Info-tvOS.plist */,
+				40DE451B1ED5B9FB007ECC83 /* Info.plist */,
+				40DE451C1ED5B9FB007ECC83 /* MultipartFormData.swift */,
+				40DE451D1ED5B9FB007ECC83 /* NetworkReachabilityManager.swift */,
+				40DE451E1ED5B9FB007ECC83 /* Notifications.swift */,
+				40DE451F1ED5B9FB007ECC83 /* ParameterEncoding.swift */,
+				40DE45201ED5B9FB007ECC83 /* Request.swift */,
+				40DE45211ED5B9FB007ECC83 /* Response.swift */,
+				40DE45221ED5B9FB007ECC83 /* ResponseSerialization.swift */,
+				40DE45231ED5B9FB007ECC83 /* Result.swift */,
+				40DE45241ED5B9FB007ECC83 /* ServerTrustPolicy.swift */,
+				40DE45251ED5B9FB007ECC83 /* SessionDelegate.swift */,
+				40DE45261ED5B9FB007ECC83 /* SessionManager.swift */,
+				40DE45271ED5B9FB007ECC83 /* TaskDelegate.swift */,
+				40DE45281ED5B9FB007ECC83 /* Timeline.swift */,
+				40DE45291ED5B9FB007ECC83 /* Validation.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +204,8 @@
 			files = (
 				40BDAB6A1ED58E17001723F0 /* LaunchScreen.storyboard in Resources */,
 				40BDAB671ED58E17001723F0 /* Assets.xcassets in Resources */,
+				40DE452D1ED5B9FB007ECC83 /* Info-tvOS.plist in Resources */,
+				40DE452E1ED5B9FB007ECC83 /* Info.plist in Resources */,
 				40BDAB621ED58E17001723F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +217,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40BDAB5F1ED58E17001723F0 /* ViewController.swift in Sources */,
+				40DE45311ED5B9FB007ECC83 /* Notifications.swift in Sources */,
+				40DE452A1ED5B9FB007ECC83 /* AFError.swift in Sources */,
+				40DE45381ED5B9FB007ECC83 /* SessionDelegate.swift in Sources */,
+				40DE45141ED5AFF7007ECC83 /* Hotel.swift in Sources */,
+				40DE45351ED5B9FB007ECC83 /* ResponseSerialization.swift in Sources */,
+				40DE452B1ED5B9FB007ECC83 /* Alamofire.swift in Sources */,
+				40DE45341ED5B9FB007ECC83 /* Response.swift in Sources */,
+				40DE452C1ED5B9FB007ECC83 /* DispatchQueue+Alamofire.swift in Sources */,
+				40DE452F1ED5B9FB007ECC83 /* MultipartFormData.swift in Sources */,
+				40DE45121ED5A766007ECC83 /* ViewController.swift in Sources */,
+				40DE453B1ED5B9FB007ECC83 /* Timeline.swift in Sources */,
+				40DE45371ED5B9FB007ECC83 /* ServerTrustPolicy.swift in Sources */,
+				40DE453C1ED5B9FB007ECC83 /* Validation.swift in Sources */,
+				40DE45321ED5B9FB007ECC83 /* ParameterEncoding.swift in Sources */,
+				40BDAB741ED5A251001723F0 /* HotelListVC.swift in Sources */,
+				40DE45301ED5B9FB007ECC83 /* NetworkReachabilityManager.swift in Sources */,
 				40BDAB651ED58E17001723F0 /* iOSBookTheHotelRoomApp.xcdatamodeld in Sources */,
+				40DE45331ED5B9FB007ECC83 /* Request.swift in Sources */,
+				40DE45361ED5B9FB007ECC83 /* Result.swift in Sources */,
+				40BDAB721ED5A132001723F0 /* hotelCell.swift in Sources */,
+				40DE45391ED5B9FB007ECC83 /* SessionManager.swift in Sources */,
+				40DE453A1ED5B9FB007ECC83 /* TaskDelegate.swift in Sources */,
 				40BDAB5D1ED58E17001723F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +403,7 @@
 				40BDAB701ED58E17001723F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
