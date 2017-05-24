@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:HotelReservation"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
+    <Grid x:Name="RoomDetailsGrid" HorizontalAlignment="Left" Width="517">
         <Grid x:Name="WelcomeGrid" Margin="0,0,10,10" Visibility="Hidden">
             <Label x:Name="labelNumberOfPeople" Content="Podaj ilość osób:" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
             <TextBox x:Name="textBoxNumberOfPeople" HorizontalAlignment="Left" Height="26" Margin="120,10,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="78"/>
@@ -16,5 +16,6 @@
             <ListBox x:Name="listBox" Margin="10,10,0,54" HorizontalAlignment="Left" Width="233"/>
             <Button x:Name="buttonRoomBooking" Content="Zarezerwuj" HorizontalAlignment="Left" Margin="82,0,0,29" Width="75" Height="20" VerticalAlignment="Bottom"/>
         </Grid>
+        <Button x:Name="buttonAcceptBooking" Content="Akceptuj" HorizontalAlignment="Left" Margin="216,270,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Window>
