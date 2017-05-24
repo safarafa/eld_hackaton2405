@@ -25,7 +25,7 @@ namespace HotelReservation
             {
                 foreach (Rooms room in allRooms)
                 {
-                    if (room.getPlace() == i)
+                    if (room.seats == i)
                     {
                         list.Add(room);
                     }
