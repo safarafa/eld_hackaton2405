@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GeolocationService } from '../geolocation.service';
+import { APIService } from '../api.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,7 +8,8 @@ import { Router } from '@angular/router';
   templateUrl: './reservation.component.html',
   styleUrls: ['./reservation.component.css'],
   providers: [
-    GeolocationService
+    GeolocationService,
+    APIService
   ]
 })
 export class ReservationComponent implements OnInit {
@@ -18,6 +20,7 @@ export class ReservationComponent implements OnInit {
   numberOfRooms: number = 1;
 
   constructor(private geolocationService: GeolocationService,
+  private apiService: APIService,
   private router: Router) {}
   
   onInputNumberOfPeopleChange(event: Event): void {
