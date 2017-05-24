@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid HorizontalAlignment="Left" Height="238" Margin="104,40,0,0" VerticalAlignment="Top" Width="310">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="59*"/>
+                <RowDefinition Height="60*"/>
+            </Grid.RowDefinitions>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="109,63,0,0" VerticalAlignment="Top" Width="75"/>
+        </Grid>
     </Grid>
 </Window>
